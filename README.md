@@ -1,1 +1,1 @@
-# minesind
+# mind
