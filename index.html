@@ -625,12 +625,22 @@ for (let i = 0; i < additional_cells; i++) {
     rand_matrix.push(random(1, 25)); // Добавляем дополнительные случайные ячейки
 }
 
+// Выбираем одну случайную ячейку для закрытия
+let closed_cell = random(1, 25);
+
+// Убираем закрытую ячейку из массива открываемых ячеек
+rand_matrix = rand_matrix.filter(cell => cell !== closed_cell);
+
+// Открываем ячейки
 for (let i of rand_matrix) {
     $("#mine" + i).addClass("mines-open-anim");
     await sleep(400);
     $("#mine" + i).addClass("mine-selected");
     await sleep(500);
 }
+
+// Здесь можно добавить логику для отображения закрытой ячейки, если это необходимо
+
 
 $(".buttons").removeClass("buttons-blocked");
 get_signal_timeout = false;
