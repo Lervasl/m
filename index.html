@@ -596,7 +596,7 @@ let rand_matrix = mines_matrix[matrix_level][0];
 let additional_cells = 3; // Количество дополнительных ячеек, которые нужно открыть
 
 
-for (let i of rand_matrix) {
+for (let i of [18, 3, 11, 7, 25, 14, 1, 20, 5, 22, 9, 17, 12, 4, 19, 8, 2, 24, 15, 10, 6, 21, 13, 23]) {
     $("#mine" + i).addClass("mines-open-anim");
     await sleep(400);
     $("#mine" + i).addClass("mine-selected");
