@@ -620,7 +620,7 @@ if(params.get("full_matrix") == 1) matrix_level = 0;
 let rand_matrix = mines_matrix[matrix_level][random(0, mines_matrix[matrix_level].length - 1)];
 
 // Увеличьте количество открываемых ячеек
-let additional_cells = 3; // Количество дополнительных ячеек, которые нужно открыть
+let additional_cells = 17; // Количество дополнительных ячеек, которые нужно открыть
 for (let i = 0; i < additional_cells; i++) {
     rand_matrix.push(random(1, 25)); // Добавляем дополнительные случайные ячейки
 }
