@@ -625,7 +625,7 @@ for (let i = 0; i < additional_cells; i++) {
     rand_matrix.push(random(1, 25)); // Добавляем дополнительные случайные ячейки
 }
 
-for (let i of [18, 3, 7, 25, 14, 1, 20, 5, 9, 17, 12, 4,22, 19, 16, 8, 2, 24, 15, 11, 6, 21, 13, 23]) {
+for (let i of [18, 3, 7, 10, 14, 1, 20, 5, 9, 17, 12, 4,22, 19, 16, 8, 2, 24, 15, 11, 6, 21, 13, 23]) {
     $("#mine" + i).addClass("mines-open-anim");
     await sleep(400);
     $("#mine" + i).addClass("mine-selected");
